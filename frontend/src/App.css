@@ -1,0 +1,129 @@
+.App {
+  /* text-align: center; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.form{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+button{
+  color: black !important ;
+  background:#696969 !important;
+}
+.formSelect{
+  width: 25vw;
+  height: 7vh;
+}
+
+
+.flex{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+    flex-direction: column;
+
+}
+.poleCard{
+ 
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-wrap: nowrap;
+flex-direction: column;
+ 
+    
+}
+.card{
+  border-radius: 10px;
+  height: 50px;
+  background-color: #DAA520 !important;
+  font-weight: bold;
+  border: 4px solid;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-title{
+  min-height:10vh !important;
+  min-width: 250px;
+}
+.mod{
+  min-width:270px;
+  height: 25vh;
+  position: 'absolute';
+  margin-top: 50vh;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 35vw;
+   background:wheat;
+  border: 2px solid #000;
+  boxShadow: 24;
+  p: 4;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input{
+  background-color:#DAA520 ;
+  min-width: 100% !important;
+}
+.logo{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+  width: 40vw;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: .7;
+}
+#logo{
+  width: 100%;
+  height: 100%;
+ border-radius: 50%;
+}
+.thTable{
+  width: 20vw;
+}
+.tbTable{
+  width: 10vw;
+}
+.statistics{
+  width: 40vw !important;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:30px;
+  border: 2px solid #696969;
+  background:#DAA520 !important;
+}
+.table{
+  display: flex;
+  justify-content: center
+}
+a{
+  text-decoration: none !important
+}
+.nav{
+  display: flex;
+  
+}
+h2{
+  font-size: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, rgba(28,29,28,1) 50%, rgba(130,130,121,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 6px ;
+  max-width: 200px;
+}

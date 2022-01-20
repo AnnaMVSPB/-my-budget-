@@ -1,0 +1,42 @@
+{
+  "name": "My_budget",
+  "short_name": "MB",
+  "icons": [
+   
+    {
+      "src": "icon-48-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icon-72-72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "icon-96-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icon-144-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icon-192-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#daa520",
+  "background_color": "#696969",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "."
+}

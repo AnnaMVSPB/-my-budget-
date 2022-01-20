@@ -1,0 +1,23 @@
+{
+  "name": "-my-budget-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm install && npm start",
+    "start": "cd backend && npm install && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaMVSPB/-my-budget-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaMVSPB/-my-budget-/issues"
+  },
+  "homepage": "https://github.com/AnnaMVSPB/-my-budget-#readme",
+  "engines": {
+    "node": "14.x"
+  }
+}
