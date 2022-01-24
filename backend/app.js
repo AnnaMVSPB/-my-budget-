@@ -4,14 +4,8 @@ const cors = require('cors');
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const FileStore = require("session-file-store")(session);
-const registerRouter=require('./routes/registerRouter')
-const loginRouter = require('./routes/loginRouter')
-const logoutRouter = require('./routes/logoutRouter')
-const listOfCategories = require('./routes/listOfCategoriesRouter')
-const expensesRouter = require('./routes/expensesRouter')
-const incomeRouter = require('./routes/incomeRouter')
-const sessions = require('./routes/sessionRouter')
-const expenseStatisticsRouter = require('./routes/ExpenseStatisticsRouter')
+const indexRouter = require('./routes/index');
+
 const PORT = 4000
 
 const app = express()
@@ -24,7 +18,7 @@ app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'src', 'views'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.resolve('../frontend/build')));
 app.use(cookieParser());
 app.use(session({
   store: new FileStore(),
@@ -39,14 +33,12 @@ app.use(session({
   store: new FileStore(),
 }))
 
-app.use('/sessionRouter',sessions)
-app.use('/signup', registerRouter);
-app.use('/login',loginRouter);
-app.use('/logout',logoutRouter);
-app.use('/listOfCategories',listOfCategories)
-app.use('/Expenses',expensesRouter)
-app.use('/income',incomeRouter)
-app.use('/ExpenseStatistics',expenseStatisticsRouter)
+
+app.use('/', indexRouter);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('../frontend/build/index.html'))
+})
 app.listen(PORT, () => {
   console.log(`Server has been started on ${PORT}`)
 })
