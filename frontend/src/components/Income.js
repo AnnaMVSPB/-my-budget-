@@ -21,7 +21,7 @@ function Income() {
       body: JSON.stringify(body)
     })
     .then(res=>res.json())
-    history.push("/")
+    // history.push("/")
   }
   return (
 <Box
