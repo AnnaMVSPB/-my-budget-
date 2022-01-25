@@ -36,6 +36,9 @@ app.use(session({
 
 app.use('/', indexRouter);
 
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('../client/build/index.html'))
+})
 app.listen(PORT, () => {
   console.log(`Server has been started on ${PORT}`)
 })
