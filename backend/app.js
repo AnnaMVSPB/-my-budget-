@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const FileStore = require("session-file-store")(session);
 const indexRouter = require('./routes/index');
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 
 const app = express()
 app.use(cors({
@@ -36,9 +36,6 @@ app.use(session({
 
 app.use('/', indexRouter);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve('../frontend/build/index.html'))
-})
 app.listen(PORT, () => {
   console.log(`Server has been started on ${PORT}`)
 })
