@@ -8,13 +8,13 @@ const incomeRouter = require('./incomeRouter')
 const sessions = require('./sessionRouter')
 const expenseStatisticsRouter = require('./ExpenseStatisticsRouter')
 
-app.use('/sessionRouter',sessions)
-app.use('/signup', registerRouter);
-app.use('/login',loginRouter);
-app.use('/logout',logoutRouter);
-app.use('/listOfCategories',listOfCategories)
-app.use('/Expenses',expensesRouter)
-app.use('/income',incomeRouter)
-app.use('/ExpenseStatistics',expenseStatisticsRouter)
+router.use('/sessionRouter',sessions)
+router.use('/signup', registerRouter);
+router.use('/login',loginRouter);
+router.use('/logout',logoutRouter);
+router.use('/listOfCategories',listOfCategories)
+router.use('/Expenses',expensesRouter)
+router.use('/income',incomeRouter)
+router.use('/ExpenseStatistics',expenseStatisticsRouter)
 
 module.exports = router;
