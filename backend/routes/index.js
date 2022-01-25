@@ -4,7 +4,7 @@ const loginRouter = require('./loginRouter')
 const logoutRouter = require('./logoutRouter')
 const listOfCategories = require('./listOfCategoriesRouter')
 const expensesRouter = require('./expensesRouter')
-const incomeRouter = require('.incomeRouter')
+const incomeRouter = require('./incomeRouter')
 const sessions = require('./sessionRouter')
 const expenseStatisticsRouter = require('./ExpenseStatisticsRouter')
 
