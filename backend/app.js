@@ -14,8 +14,7 @@ app.use(cors({
   credentials: true,
 }));
 
-app.set('view engine', 'hbs')
-app.set('views', path.join(__dirname, 'src', 'views'))
+
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 app.use(express.static(path.resolve('../frontend/build')));
@@ -37,7 +36,7 @@ app.use(session({
 app.use('/', indexRouter);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve('../frontend/build'))
+  res.sendFile(path.resolve('../frontend/build/index.html'));
 })
 app.listen(PORT, () => {
   console.log(`Server has been started on ${PORT}`)
