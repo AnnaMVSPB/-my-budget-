@@ -16,7 +16,7 @@ import Logo from './components/Logo';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch('http://localhost:4000/sessionRouter', {
+    fetch('/sessionRouter', {
       method: 'POST',
       credentials: 'include',
       headers: {
