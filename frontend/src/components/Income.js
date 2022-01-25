@@ -12,7 +12,7 @@ function Income() {
       sum: data.get('sum'),
       comments : data.get('comments')
     };
-    fetch('http://localhost:4000/income', {
+    fetch('/income', {
       method: 'POST',
       credentials: 'include',
       headers: {

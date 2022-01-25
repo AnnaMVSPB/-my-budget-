@@ -9,7 +9,7 @@ function AddCosts() {
   const dispatch = useDispatch();
   const  caterories =  useSelector((state) => state.caterories)
   useEffect(()=>{
-    fetch('http://localhost:4000/listOfCategories', {
+    fetch('/listOfCategories', {
       method: 'POST',
       credentials: 'include',
       headers: {

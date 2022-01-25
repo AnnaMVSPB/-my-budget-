@@ -13,7 +13,7 @@ function Login() {
       email: data.get('email'),
       password: data.get('password'),
     };
-    fetch('http://localhost:4000/login', {
+    fetch('/login', {
       method: 'POST',
       credentials: 'include',
       headers: {

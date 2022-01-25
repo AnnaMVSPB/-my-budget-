@@ -15,7 +15,7 @@ function ExpenseStatistics() {
       month=`0${month.toString()}` 
     }
     monthYear.push(`${e.target.year.value}-${month}`)
-    fetch('http://localhost:4000/ExpenseStatistics', {
+    fetch('/ExpenseStatistics', {
       method: 'POST',
       credentials: 'include',
       headers: {

@@ -15,7 +15,7 @@ function Signup() {
       password: data.get('password'),
     };
 
-    fetch('http://localhost:4000/signup', {
+    fetch('/signup', {
       method: 'POST',
       credentials: 'include',
       headers: {

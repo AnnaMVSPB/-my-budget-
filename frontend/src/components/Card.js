@@ -12,7 +12,7 @@ function Cards({ name }) {
       name: name.nameCategory
     }
     handleClose()
-    fetch('http://localhost:4000/Expenses', {
+    fetch('/Expenses', {
       method: 'POST',
       credentials: 'include',
       headers: {
