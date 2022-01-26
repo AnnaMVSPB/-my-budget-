@@ -1,10 +1,13 @@
 {
   "development": {
-    "username": "anya",
-    "password": "anya",
-    "database": "budget",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "ssl":true,
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
   },
 
   "production": {
