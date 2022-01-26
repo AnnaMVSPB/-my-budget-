@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 function AddCosts() {
   const dispatch = useDispatch();
   const  caterories =  useSelector((state) => state.caterories)
+  
   useEffect(()=>{
     fetch('/listOfCategories', {
       method: 'POST',

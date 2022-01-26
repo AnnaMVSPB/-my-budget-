@@ -5,6 +5,7 @@ const router = express.Router();
 router.post('/', async (req, res) => {
   try {
     const { sum, name } = req.body;
+    
     const idExpenssesSum = await Expense.findOne({
       where: {
         nameCategory:name,
