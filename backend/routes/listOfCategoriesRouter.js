@@ -1,7 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 
-const { Expense } = require('../models/index');
+const { Expense } = require('../db/models');
 
 const router = express.Router();
 

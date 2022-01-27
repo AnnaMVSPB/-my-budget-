@@ -1,5 +1,5 @@
 const express = require('express');
-const { ExpensesSum,Expense } = require('../models/index');
+const { ExpensesSum,Expense } = require('../db/models');
 const router = express.Router();
 
 router.post('/', async (req, res) => {

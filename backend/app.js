@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000
 
 const app = express()
 app.use(cors({
-  origin: 'https://my-budget-calculation.herokuapp.com',
+  origin: ['http://localhost:3000','https://my-budget-calculation.herokuapp.com'],
   credentials: true,
 }));
 
